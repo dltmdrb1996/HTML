@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8" />
+		<title>LSG</title>
+		<meta name="description" content="TEST" />
+		<meta name="author" content="LSG" />
+		<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+		<link rel="shortcut icon" href="images/sdfaf.ico" />
+	</head>
+	<body>
+		<!--<img src="images/muffin.png" alt="muffin">-->
+		<form method="post"login.jsp">
+			<p>
+				<label for="id">아이디 &nbsp;&nbsp;</label>  
+				<input type="text" id="id" size="15" maxlength="10" autofocus required/>
+			</p>
+			<p>
+				<label for="pw">비밀번호</label>
+				<input type="password" id="pw" size="15" maxlength="10"/>
+			</p>
+			<p>			
+				<label for="email">이메일 &nbsp;&nbsp;</label>  
+				<input type="email" id="email" size="15" maxlength="10" value="hong@naver.com"/>
+			</p>
+			<p>
+				<label >전화번호</label>  
+				<input type="text"size="15" placeholder="하이폰없이입력"/>
+			</p>
+			<fieldset>
+				<legend>과티 주문</legend>
+				<p>올해 과티를 만들려고 합니다, 원하는 색상을 추천해주세여</p>
+				<lable>선호색상</lable>
+				<input type="color" />
+				<input type="date" min="2020-08-20" max="2020-08-28" />
+			</fieldset>
+			<input type="submit" value="로그인"/>
+			<h3>취미 선택(다수선택가능)</h3>
+				<p><input type="checkbox" value="val1"/>독서
+				<input type="checkbox" value="val2"/>등산
+				<input type="checkbox" value="val3"/>낚시</p>
+			<fieldset>
+				<legend>구분</legend>
+				<input type="radio" name="val"/>아동
+				<input type="radio" name="val"/>청소년
+				<input type="radio" name="val"/>어른
+			</fieldset>			
+			파일첨부<input type="file"/>
+			<input type="submit"회원가입" />
+			<input type="reset" value="다시입력" />
+		</form>
+		
+	</body>
+</html>
