@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8" />
+		<title>LSG</title>
+		<meta name="description" content="TEST" />
+		<meta name="author" content="LSG" />
+		<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+		<link rel="shortcut icon" href="images/sdfaf.ico" />
+		<style>/*absolute는 포지션이 있는 부모가 기준이되 부모중 포지션이 아무도없으면 body가 기준이다.*/
+			#content{
+				position:relative;
+				border:1px solid;
+				width:400px;
+				height:200px;
+				overflow:scroll;
+			}
+			.box{
+				width:100px;
+				height:100px;
+				position: absolute;
+			}
+			.box:nth-child(1){
+				background-color: red;
+				left:10px; top:10px;
+				z-index: 10;
+			}
+			.box:nth-child(2){
+				background-color: green;
+				left:50px; top:50px;
+				z-index: 5;		
+			}
+			.box:nth-child(3){
+				background-color: blue;
+				left:90px; top:90px;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>위</h1>
+		<div id="content">
+			<div class="box"></div>
+			<div class="box"></div>	
+			<div class="box"></div>
+		</div>
+		<h1>아래ddddddddddddddd</h1>
+	</body>
+</html>
