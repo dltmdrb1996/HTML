@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8" />
+		<title>LSG</title>
+		<meta name="description" content="TEST" />
+		<meta name="author" content="LSG" />
+		<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+		<link rel="shortcut icon" href="images/sdfaf.ico" />
+		<style>
+			@keyframes colorchange{
+				0%{
+					background-color:red;
+				}
+				100%{
+					background-color: blue;
+				}
+				
+			}
+			div{
+				width: 100px;
+				height:100px;
+				background-color: red;
+				animation: colorchange 3s ease 0s infinite;
+				animation-direction:alternate;
+			}
+			div:hover{
+				animation-play-state:paused;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			
+		</div>
+	</body>
+</html>
