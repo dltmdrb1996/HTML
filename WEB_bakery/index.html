@@ -8,6 +8,7 @@
 		<meta name="viewport" content="width=device-width; initial-scale=1.0" />
 		<link rel="shortcut icon" href="images/sdfaf.ico" />
 		<link rel="stylesheet" type="text/css" href="css/main.css"/>	
+		<script src="js/main.js"></script>
 	</head>
 	<body>
 											<!-- 헤더 영역 시작 -->
@@ -57,7 +58,7 @@
 		<div id="contents">
 			<div class="notice">
 				<h2>공지사항</h2>
-				<table>
+				<table border="0">
 					<tr>
 						<th>내용</th><th>날짜</th>
 					</tr>
@@ -79,10 +80,13 @@
 				</table>
 			</div>
 			<div class="partner">
-				<a href="popup.html">
-					<img src="images/PARTNER.jpg" alt="PARTNER"/>
-					<img src="images/PARTNER_UP.png" alt="PARTNER_UP"/>
-				</a>
+				<h2>Partner</h2>
+				<div class="info" onclick="partpopup();">
+					<a href="#">
+						<img src="images/PARTNER.jpg" alt="PARTNER"/>
+						<img src="images/PARTNER_UP.png" alt="PARTNER_UP"/>
+					</a>
+				</div>
 			</div>
 			<div class="icons">
 				<div class="btn">
@@ -103,20 +107,22 @@
 		
 											<!-- 푸터 영역 시작-->
 		<footer id="footer">
-			<ul>
-				<li><a href="#">법적고지</a></li>
-				<li><a href="#">개인정보취급방침</a></li>
-				<li><a href="#">개인정보처리방침</a></li>
-			</ul>
-			<address>
-				사업자번호:228-81-03754<br />
-				상호명:(주)디디베이커리<br />
-				대표자:다진<br />
-				개인정보관리책임자:윤준우<br />
-				상담전화:1588-0789<br />
-				사업자주소:서울특별시 금천구 가산동 가산디지털2로<br />
-				E-mail:master@ddbb.com
-			</address>
+			<div class="footer_content">
+				<ul>
+					<li><a href="#">법적고지</a></li>
+					<li><a href="#">개인정보취급방침</a></li>
+					<li><a href="#">개인정보처리방침</a></li>
+				</ul>
+				<address>
+					사업자번호:228-81-03754<br />
+					상호명:(주)디디베이커리<br />
+					대표자:다진<br />
+					개인정보관리책임자:윤준우<br />
+					상담전화:1588-0789<br />
+					사업자주소:서울특별시 금천구 가산동 가산디지털2로<br />
+					E-mail:master@ddbb.com
+				</address>
+			</div>
 		</footer>
 											<!-- 푸터 영역 종료-->
 	</body>

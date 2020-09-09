@@ -12,12 +12,13 @@ li{
 }
 body{
 	font-family: "맑은 고딕", sans-serif;
-	width:960px;
-	margin: 0 auto;
+
 }
 /* 헤더 영역 */
 #header{
 	height: 150px;
+	width:960px;
+	margin: 0 auto;
 }
 .logo{
 	float: left;
@@ -75,6 +76,8 @@ nav > ul{
 #mainImage{
 	height:400px;
 	position: relative;
+	width:960px;
+	margin: 0 auto;
 }
 .imgs {
 	height: 400px;
@@ -104,6 +107,10 @@ nav > ul{
 	color:#6a6a6a;
 }
 /* 메인컨텐츠 영역*/
+#contents{
+	width:960px;
+	margin: 0 auto;
+}
 .notice{
 	width:480px;
 	float:left;
@@ -118,6 +125,8 @@ nav > ul{
 	font-size:0.9em;
 	color: #666;
 	width: 430px;
+	border-collapse: collapse;
+	margin-left: 20px;
 }
 .notice > table > tbody > tr > th{
 	padding: 5px 0;
@@ -125,9 +134,70 @@ nav > ul{
 .notice > table > tbody> tr > td{
 	padding: 5px;
 }
+.notice > table tr:nth-child(2n){
+	background-color: rgba(153,153,102,0.5);
+}
 .partner{
 	width: 480px;
 	float: right;
+	margin-top: 20px;
+}
+.partner > h2{
+	text-align: center;
+}
+.info{
+	margin-top: 10px;
+	padding-left: 20%;
+}
+.icons{
+	padding-top: 20px;
+	clear: both;
+	text-align: center;
+}
+.btn{
+	display: inline-block;
+	width: 160px;
+}
+.btn img{
+	width: 150px;
+}
+.btn > button{
+	background-color: #BB692D;
+	color: #fff;
+	padding: 10px;
+	border: none;
+	font-size: 1.2em;
+	border-radius: 10px;
+}
+.btn > button:hover{
+	background-color: #99cc66;
+	cursor: pointer;
+}
+#footer{
+	height: 150px;
+	margin-top: 30px;
+	background-color: #BB692D;
+	color: #fff;
+	padding: 10px; 20px;
+}
+#footer  ul{
+	float: left;
+}
+#footer  ul > li{
+	float: left;
+	padding:30px 20px 0 0;
+}
+#footer  ul > li > a{
+	color: #fff;
+}
+#footer address{
+	float: right;
+	font-style: normal;
+	font-size:0.8em;
+	padding-right: 120px;
+}
+.footercontent{
+	width:960px;
+	margin: 0 auto;
 }
 
-}
