@@ -7,14 +7,20 @@
 		<meta name="author" content="LSG" />
 		<meta name="viewport" content="width=device-width; initial-scale=1.0" />
 		<link rel="shortcut icon" href="images/sdfaf.ico" />
-		<style>
-			body{
-				background-image: url(../images/BackgroundFront.png),
-								  url(../images/BackgroundBack.png);
-				background-repeat: no-repeat;
-				background-size: 100%;
+		<script>
+		var output="";
+			for(var i=1;i<=15;i++){
+				for(var j=15; j>i; j--){
+					output+=" ";
+				}
+				for(var k=1; k<=2*i-1;k++){
+					output+="*";
+				}
+				output+="\n";
 			}
-		</style>
+			alert(output);
+			
+		</script>
 	</head>
 	<body>
 		

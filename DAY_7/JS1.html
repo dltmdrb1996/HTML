@@ -8,15 +8,19 @@
 		<meta name="viewport" content="width=device-width; initial-scale=1.0" />
 		<link rel="shortcut icon" href="images/sdfaf.ico" />
 		<style>
-			body{
-				background-image: url(../images/BackgroundFront.png),
-								  url(../images/BackgroundBack.png);
-				background-repeat: no-repeat;
-				background-size: 100%;
-			}
+			cursor:pointer;
 		</style>
+		<script>
+		var s;
+			s=setInterval(function(){
+				alert("10초가 지났습니다. ㅋㅋㅋ");
+			},5000);
+			function stop(){
+				clearTimeout(s);
+			}
+		</script>
 	</head>
 	<body>
-		
+		<h1 onclick="stop();">자바스크립트 문법</h1>
 	</body>
 </html>

@@ -8,13 +8,17 @@
 		<meta name="viewport" content="width=device-width; initial-scale=1.0" />
 		<link rel="shortcut icon" href="images/sdfaf.ico" />
 		<style>
-			body{
-				background-image: url(../images/BackgroundFront.png),
-								  url(../images/BackgroundBack.png);
-				background-repeat: no-repeat;
-				background-size: 100%;
-			}
+			
 		</style>
+		<script>
+			for(var i=2; i<=9;i++){
+				document.write('<h3>*** '+ i + '단 ***</h3>');
+				for(var j=1; j<=9; j++){
+					document.write(i+' X '+j+' = '+(i*j)+'<br/>');
+				}
+			}
+			
+		</script>
 	</head>
 	<body>
 		

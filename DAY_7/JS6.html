@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8" />
+		<title>LSG</title>
+		<meta name="description" content="TEST" />
+		<meta name="author" content="LSG" />
+		<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+		<link rel="shortcut icon" href="images/sdfaf.ico" />
+		<style>
+			
+		</style>
+		<script>
+			var student={
+				이름:'홍길동',
+				국어:90, 영어:82,
+				수학:76, 과학:88
+			};
+			var output="";
+			/*
+			output+="홍길동의 성적표\n";
+			output+="국어:"+student.국어;
+			output+="\n영어:"+student.영어;
+			output+="\n수학:"+student.수학;
+			output+="\n과학:"+student.과학;
+			output+="\n총점:"+(student.국어+student.영어+student.수학+student.과학);
+			output+="\n평균:"+((student.국어+student.영어+student.수학+student.과학)/4);	
+			alert(output);
+			*/
+			with(student){
+				output+=이름+"의 성적표\n";
+				output+="국어:"+국어;
+				output+="\n영어:"+영어;
+				output+="\n수학:"+수학;
+				output+="\n과학:"+과학;
+				output+="\n총점:"+(student.국어+student.영어+student.수학+student.과학);
+				output+="\n평균:"+((student.국어+student.영어+student.수학+student.과학)/4);	
+			}
+			alert(output);
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8" />
+		<title>LSG</title>
+		<meta name="description" content="TEST" />
+		<meta name="author" content="LSG" />
+		<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+		<link rel="shortcut icon" href="images/sdfaf.ico" />
+		<style>
+			
+		</style>
+		<script>
+			var win=window.open('','','width=600, height=300');
+			var w=screen.width;
+			var h=screen.height;
+			win.moveTo(0,0);
+			win.resizeTo(w,h);
+			win.document.write('<h1>코로나 박멸!!</h1>');
+			setInterval(function(){
+				win.moveBy(10,10);
+				win.resizeBy(-20,-20);
+			},1000);
+			var count=0;	
+			/*
+			var site=['www.kbs.co.kr','www.imbc.com','www.sbs.co.kr'];
+			setInterval(function (){
+				window.open('http://'+site[count],'','width=600,height=300');
+				count++;
+				if(count>=3){
+					
+				}
+				},3000)*/
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>

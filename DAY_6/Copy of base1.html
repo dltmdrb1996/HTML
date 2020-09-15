@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8" />
+		<title>LSG</title>
+		<meta name="description" content="TEST" />
+		<meta name="author" content="LSG" />
+		<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+		<link rel="shortcut icon" href="images/sdfaf.ico" />
+		<script>
+			window.onload=function(){
+				var date=new Date();
+				var hour=date.getHours();
+				var output="";
+				if(hour<16){
+					output+="<ui>";
+					output+="<li>된장찌개</li>";
+					output+="<li>김치찌개</li>";
+					output+="<li>칼국수</li>";
+					output+="</ui>";
+				}else{
+					output+="<ui>";
+					output+="<li>후라이드치킨</li>";
+					output+="<li>양념치킨</li>";
+					output+="<li>골뱅이무침</li>";
+					output+="</ui>";
+				}
+				document.body.innerHTML=output;
+			}
+		</script>
+	</head>
+	<body>
+		<h1>자바스크립트 문법</h1>
+	</body>
+</html>

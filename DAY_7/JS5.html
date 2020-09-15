@@ -8,13 +8,17 @@
 		<meta name="viewport" content="width=device-width; initial-scale=1.0" />
 		<link rel="shortcut icon" href="images/sdfaf.ico" />
 		<style>
-			body{
-				background-image: url(../images/BackgroundFront.png),
-								  url(../images/BackgroundBack.png);
-				background-repeat: no-repeat;
-				background-size: 100%;
-			}
+			
 		</style>
+		<script>
+			var person={
+				name:'이승규',
+				eat:function(food){
+					alert(this.name+'가 '+food+'를(을) 먹었습니다.');
+				}	
+			};
+			person.eat('밥');
+		</script>
 	</head>
 	<body>
 		

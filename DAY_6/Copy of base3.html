@@ -7,16 +7,18 @@
 		<meta name="author" content="LSG" />
 		<meta name="viewport" content="width=device-width; initial-scale=1.0" />
 		<link rel="shortcut icon" href="images/sdfaf.ico" />
-		<style>
-			body{
-				background-image: url(../images/BackgroundFront.png),
-								  url(../images/BackgroundBack.png);
-				background-repeat: no-repeat;
-				background-size: 100%;
-			}
-		</style>
+		<script>
+			var d=new Date();
+			var h=d.getHours();
+			if(h<11)
+				alert("상쾌한 아침");
+			else if(h<18)
+				alert("즐거운 오후");
+			else
+				alert("행복한 저녁되세요");
+		</script>
 	</head>
 	<body>
-		
+		<h2>문법</h2>
 	</body>
 </html>

@@ -7,14 +7,17 @@
 		<meta name="author" content="LSG" />
 		<meta name="viewport" content="width=device-width; initial-scale=1.0" />
 		<link rel="shortcut icon" href="images/sdfaf.ico" />
-		<style>
-			body{
-				background-image: url(../images/BackgroundFront.png),
-								  url(../images/BackgroundBack.png);
-				background-repeat: no-repeat;
-				background-size: 100%;
+		<script>
+		var output="";
+			var arr=[1,2,3,4,5,6,7,8,9,10];
+			var sum=0;
+			for(var i=0; i<arr.length;i++){
+				if(arr[i]%2==0)
+					sum+=arr[i];
+				else continue;		
 			}
-		</style>
+			alert(sum);
+		</script>
 	</head>
 	<body>
 		
