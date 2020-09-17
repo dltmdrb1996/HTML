@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8" />
+		<title>LSG</title>
+		<meta name="description" content="TEST" />
+		<meta name="author" content="LSG" />
+		<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+		<link rel="shortcut icon" href="images/sdfaf.ico" />
+		<style>
+		
+		</style>
+		<script>
+			window.onload=function(){
+				var count11=0;
+				var count22=0;
+				
+				var count1=document.getElementById('count-1')
+				var count2=document.getElementById('count-2')
+				
+				var click1=document.getElementById('btn-1');
+				var click2=document.getElementById('btn-2');
+				click1.onclick=function(){
+					count1.innerHTML=Number(count1.innerHTML)+1;
+					count11++;
+				};
+				click2.onclick=function(){
+					count2.innerHTML=count22;
+					count22++;
+				
+				};
+			};
+		</script>
+	</head>
+	<body>
+		<button id="btn-1">
+			김철수
+		</button>
+		<button id="btn-2">
+			홍길동
+		</button>
+		<h1>김철수 - <span id="count-1">0</span></h1>
+		<h1>홍길동 - <span id="count-2">0</span></h1>
+		
+
+	</body>
+</html>

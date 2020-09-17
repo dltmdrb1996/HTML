@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8" />
+		<title>LSG</title>
+		<meta name="description" content="TEST" />
+		<meta name="author" content="LSG" />
+		<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+		<link rel="shortcut icon" href="images/sdfaf.ico" />
+		<script src="../js/jquery-3.5.1.min.js"></script>
+		<style>
+		
+		</style>
+		<script>	
+			$(function(){
+				setTimeout(function(){
+					var value=$('select>option:selected').val();
+					alert('오늘 점심은'+value+'입니다.');
+				},5000);
+				 
+			});
+		</script>
+	</head>
+	<body>
+		<h1>제이쿼리 : 자바스크립트로 만들어진 라이브러리</h1>
+		<select>
+			<option>김치찌개</option>	
+			<option>된장찌개</option>	
+			<option>칼국수</option>	
+			<option>비빔밥</option>	
+			<option>순대국</option>	
+		</select>
+		
+	</body>
+</html>
