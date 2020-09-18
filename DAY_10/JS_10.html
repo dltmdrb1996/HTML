@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8" />
+		<title>LSG</title>
+		<meta name="description" content="TEST" />
+		<meta name="author" content="LSG" />
+		<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+		<link rel="shortcut icon" href="images/sdfaf.ico" />
+		<script src="../js/jquery-3.5.1.min.js"></script>
+		<style>
+		
+		</style>
+		<script>	
+			var arr=['red','blue','green'];
+			var count=0;
+		//	$(function(){
+		//		$('h1').css('color',function(index){
+		//			return arr[index];	
+		//		});
+					
+			$(function(){
+		//		$('h1').click(function(index){
+		//			
+		//			$('h1:nth-child(3n+'+index+')').click(function(index){
+		//				$(this).css('color','arr[index]');
+		//		});
+			
+				$('h1').click(function(index){
+						
+						{
+							$(this).css('color',arr[$(this).index()]);
+						}
+						if($(this).css( 'color' )==rgb(255, 0, 0)){
+							alert($(this).css('color'));
+							
+						}
+					});
+			})
+		</script>
+	</head>
+	<body>
+		<h1>제이쿼리 : 자바스크립트로 만들어진 라이브러리</h1>
+		<h1>제이쿼리 : 자바스크립트로 만들어진 라이브러리</h1>
+		<h1>제이쿼리 : 자바스크립트로 만들어진 라이브러리</h1>
+	</body>
+</html>

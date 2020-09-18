@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8" />
+		<title>LSG</title>
+		<meta name="description" content="TEST" />
+		<meta name="author" content="LSG" />
+		<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+		<link rel="shortcut icon" href="images/sdfaf.ico" />
+		<script src="../js/jquery-3.5.1.min.js"></script>
+		<style>
+		
+		</style>
+		<script>	
+			$(function(){
+				
+			//	$('h1').filter(':even').css({
+			//		background:'yellow',
+			//		color:'red'
+			//	});
+			
+				$('h1').filter(function (index){
+					return index % 3==0;
+				}).css({
+					background:'yellow',
+					color:'red'
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<h1>제이쿼리 : 자바스크립트로 만들어진 라이브러리1</h1>
+		<h1>제이쿼리 : 자바스크립트로 만들어진 라이브러리2</h1>
+		<h1>제이쿼리 : 자바스크립트로 만들어진 라이브러리3</h1>
+		<h1>제이쿼리 : 자바스크립트로 만들어진 라이브러리4</h1>
+		<h1>제이쿼리 : 자바스크립트로 만들어진 라이브러리5</h1>
+		<h1>제이쿼리 : 자바스크립트로 만들어진 라이브러리6</h1>
+		<h1>제이쿼리 : 자바스크립트로 만들어진 라이브러리7</h1>
+		<h1>제이쿼리 : 자바스크립트로 만들어진 라이브러리8</h1>
+	</body>
+</html>

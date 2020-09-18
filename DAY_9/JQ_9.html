@@ -13,10 +13,12 @@
 		</style>
 		<script>	
 			$(function(){
-				$('td:nth-child(1)').css('background','#B7F0B1');
-				$('td:nth-child(2)').css('background','yellow');
-				$('td:nth-child(3)').css('background','blue');
-				$("th").css('background','black');
+				$('td:nth-child(1n)').css('background','#B7F0B1');
+				$('td:nth-child(2n)').css('background','yellow');
+				$('td:nth-child(3n)').css('background','blue');
+				$("tr:eq(0)").css({background:'black',
+								   color:'white'
+				});
 			});
 		</script>
 	</head>
