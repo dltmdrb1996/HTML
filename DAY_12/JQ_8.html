@@ -9,32 +9,31 @@
 		<link rel="shortcut icon" href="images/sdfaf.ico" />
 		<script src="../js/jquery-3.5.1.min.js"></script>
 		<style>
-		
+			*{
+				margin:5px;	padding: 5px;
+				border: 3px solid black;
+				
+			}
 		</style>
 		<script>	
-			var arr=['red','blue','green'];
-			var count=0;
-		//	$(function(){
-		//		$('h1').css('color',function(index){
-		//			return arr[index];	
-		//		});
-					
 			$(function(){
-		//		$('h1').click(function(index){
-		//			
-		//			$('h1:nth-child(3n+'+index+')').click(function(index){
-		//				$(this).css('color','arr[index]');
-		//		});
-				$('h1').click(function(index){
-						{
-							$(this).css('color',arr[$(this).index()]);
-						}
-					});
+				$('a').click(function(event){
+					$(this).css('background','blue');
+			//		event.preventDefault();
+					event.stopPropagation();
+				});
+				$('h1').click(function(){
+					$(this).css('background','red');
+				});
+				
 			})
 		</script>
 	</head>
 	<body>
-		<h1>제이쿼리 : 자바스크립트로 만들어진 라이브러리</h1>
+		<h1>
+			<a href="http://www.kbs.co.kr">한국방송</a>
+		</h1>
+		
 		<h1>제이쿼리 : 자바스크립트로 만들어진 라이브러리</h1>
 		<h1>제이쿼리 : 자바스크립트로 만들어진 라이브러리</h1>
 	</body>

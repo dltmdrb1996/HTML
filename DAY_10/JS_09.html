@@ -13,31 +13,24 @@
 		</style>
 		<script>	
 			$(function(){
-			
-			/*	$('img:eq(0)').hover(function(){
-					$(this).attr('src','../images/box2.png');
+				var arr=['../images/box2.png','../images/lightbulb.png','../images/smile.png'];
+				var arr2=['../images/box1.png','../images/lightbulb1.png','../images/sad.png'];
+				var oldimg;
+				$('img').hover(function(index){
+					$(this).attr('src',arr[$(this).index()]);
 				},function(){
-					$(this).attr('src','../images/box1.png');
-				})
+					$(this).attr('src',arr2[$(this).index()]);	
+				});
 				
-				$('img:eq(1)').hover(function(){
-					$(this).attr('src','../images/lightbulb.png');
+				$('img').hover(function(index){
+					oldimg=$(this).attr('src');
+					$(this).attr('src',arr[$(this).index()]);
+					
 				},function(){
-					$(this).attr('src','../images/lightbulb1.png');
-				})
-				
-				$('img:eq(2)').hover(function(){
-					$(this).attr('src','../images/smile.png');
-				},function(){
-					$(this).attr('src','../images/sad.png');
-				}) 
-			*/
-			
-				$()
-				
-				
-				
-			})
+					$(this).attr('src',oldimg]);	
+				});
+
+			});
 		</script>
 	</head>
 	<body>

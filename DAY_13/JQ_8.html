@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8" />
+		<title>LSG</title>
+		<meta name="description" content="TEST" />
+		<meta name="author" content="LSG" />
+		<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+		<link rel="shortcut icon" href="images/sdfaf.ico" />
+		<script src="../js/jquery-3.5.1.min.js"></script>
+		<<style>
+			div{
+				width:50px; height:50px;
+				background-color: orange;
+			
+			}		
+		</style>
+		<script>	
+			$(function(){
+				var w=100;
+				var h=100;
+				var i=0;
+				var colors=['red','blue','green','black','purple','orange'];
+				$('div').click(function(){		
+					$(this).animate({
+						width:w, // width:parseInt(w)+100; 	, width:'+=100'
+						height:h //	height:parseInt(h)+100;	, height:'+=100'
+					},'slow',function(){
+						if(h>=1000){
+							w=100;	h=100;
+							$('div').css('width',w).css('height',h);
+							$('div').css('background-color',colors[i]);
+							i++;
+						}
+						else{
+							w+=100; //주석으로하면 생략
+							h+=100;	//생략
+						}
+					})
+					
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<div></div>
+		
+	</body>
+</html>

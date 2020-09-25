@@ -12,30 +12,24 @@
 		
 		</style>
 		<script>	
-			var arr=['red','blue','green'];
-			var count=0;
-		//	$(function(){
-		//		$('h1').css('color',function(index){
-		//			return arr[index];	
-		//		});
-					
-			$(function(){
-		//		$('h1').click(function(index){
-		//			
-		//			$('h1:nth-child(3n+'+index+')').click(function(index){
-		//				$(this).css('color','arr[index]');
-		//		});
-				$('h1').click(function(index){
-						{
-							$(this).css('color',arr[$(this).index()]);
-						}
-					});
-			})
+		//  $(선택자).on(이벤트,선택자,함수)>>현재 또는 미래에 존재하는 문서 객체에 이벤트를 발생시킵니다.
+		$(function(){
+			$('.wrap').on('click','h1',function(index){
+				var len=$('h1').length;
+				$(this).css('color','red');
+				$('<h1>생성생성</h1>').appendTo('.wrap');
+				alert(len);
+			});
+		});
 		</script>
 	</head>
 	<body>
+		<div class="wrap">
 		<h1>제이쿼리 : 자바스크립트로 만들어진 라이브러리</h1>
 		<h1>제이쿼리 : 자바스크립트로 만들어진 라이브러리</h1>
 		<h1>제이쿼리 : 자바스크립트로 만들어진 라이브러리</h1>
+		<h1>제이쿼리 : 자바스크립트로 만들어진 라이브러리</h1>
+		<h1>제이쿼리 : 자바스크립트로 만들어진 라이브러리</h1>
+		</div>
 	</body>
 </html>

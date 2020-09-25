@@ -12,25 +12,12 @@
 		
 		</style>
 		<script>	
-			var arr=['red','blue','green'];
-			var count=0;
-		//	$(function(){
-		//		$('h1').css('color',function(index){
-		//			return arr[index];	
-		//		});
-					
+			var color=['red','blue','green'];
 			$(function(){
-		//		$('h1').click(function(index){
-		//			
-		//			$('h1:nth-child(3n+'+index+')').click(function(index){
-		//				$(this).css('color','arr[index]');
-		//		});
-				$('h1').click(function(index){
-						{
-							$(this).css('color',arr[$(this).index()]);
-						}
-					});
-			})
+				$('h1').css('background','yellow').css('color',function(index){
+					return color[index];
+				});
+			})		
 		</script>
 	</head>
 	<body>

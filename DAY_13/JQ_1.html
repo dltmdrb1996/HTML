@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8" />
+		<title>LSG</title>
+		<meta name="description" content="TEST" />
+		<meta name="author" content="LSG" />
+		<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+		<link rel="shortcut icon" href="images/sdfaf.ico" />
+		<script src="../js/jquery-3.5.1.min.js"></script>
+		<style>
+			.news{
+				display: none;
+				width:300px;
+				height:500px;
+				border:1px solid;
+			}
+			
+		</style>
+		<script>	
+			$(function(){
+				$('button').click(function(){	
+					var count=0;
+					var a=$('.news').css('display')
+					// if('none'==a)
+					// {
+						// $('.news').show('1000',function(){
+							// $('button').html("뉴스감추기");
+						// });
+					// }
+					// else if('block'==a)
+					// {
+						// $('.news').hide('1000',function(){
+							// $('button').html("뉴스보기");	
+						// });
+// 				
+					// }
+ 					
+ 					$('.news').toggle('1000',function(){
+ 						if(count==0){
+ 							$('button').html("뉴스감추기");
+ 							count=1;	
+ 						}
+ 						if(count==1){
+ 							$('button').html("뉴스보기");	
+ 							count=0;
+ 						}
+ 					})	
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<button>뉴스보기</button>
+		<h1>제이쿼리 : 자바스크립트로 만들어진 라이브러리</h1>
+		<div class=news>
+			<h1>배터리 데이</h1>
+			<p>
+				네, 오늘(23일) 배터리 데이 행사는 우리 시간으로 오전 5시 30분부터 미국 실리콘밸리 프리몬트 공장 주차장에서 열리고 있습니다.
+				최고경영자 머스크는 검은색 티셔츠와 청바지를 입고 연단에 등장했는데요.
+				참석자들은 주차장에 마련된 테슬라 차 안에서 발표를 지켜봤는데, 주주들은 머스크의 발언에 호응할 때는 박수 대신 경적을 울렸습니다.
+				이번 행사는 테슬라가 전기차의 핵심 부품인 배터리의 자체 생산 계획을 내놓을지, 중국 최대 배터리 업체인 CATL과의 협업을 강화할지 등에 초점이 모아지고 있습니다.
+				이에 앞서 일론 머스크 최고경영자는 SNS를 통해 오는 2022년 전기차 배터리 공급 부족을 예상하며, LG화학을 비롯한 배터리 파트너사들로부터 구매를 늘릴 것이라고 밝혔습니다.
+			</p>
+			<img src="../images/Koala.jpg" />
+		</div>
+	</body>
+</html>

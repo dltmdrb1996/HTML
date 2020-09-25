@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>base</title>
+		<style>
+			img {
+				position: relative;
+				margin-bottom: 150px;
+				
+			}
+			#line {
+				position: fixed;
+				left:1500px;
+				width:1px;
+				height: 700px;
+				background: black;
+			}
+		</style>
+		<script src="../js/jquery-3.5.1.min.js"></script>
+		<script>
+			$(document).ready(function () {
+				var ran;
+				var left;
+				var s;
+				$('button').click(function () {
+					run();
+					 s=setInterval(function () {
+					   run();
+			   		},1000);
+				});
+				function run() {
+						$('img').each(function (index) {
+							//console.log(index);
+							ran= Math.round(Math.random()*100);
+							left=parseInt($(this).css('left'))+ran;
+							if(left>=1500) {
+							clearInterval(s);
+						    } else {
+								$(this).animate({
+								left: '+='+ ran
+								},1000);
+							}
+						});
+				}
+			});
+		</script>
+	</head>
+	<body>
+		<button>출발</button><br /><br /><br /><br />
+		<div id="con">
+			<div id="line"></div>
+			<div><img src="../images/car_green.jpg" width="100"/></div>
+			<div><img src="../images/car_red.jpg" width="100"/></div>
+			<div><img src="../images/car_blue.jpg" width="100"/></div>
+			<div><img src="../images/car_yellow.jpg" width="100"/></div>
+		</div>
+		
+	</body>
+</html>
