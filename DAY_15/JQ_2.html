@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8" />
+		<title>LSG</title>
+		<meta name="description" content="TEST" />
+		<meta name="author" content="LSG" />
+		<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+		<link rel="shortcut icon" href="images/sdfaf.ico" />
+		<link rel="stylesheet" type="text/css" href="../css/jquery-ui.css" />
+		<style>
+			h2{
+				text-align:center;
+			}
+			input, label{
+				margin-bottom:12px;
+				padding: 0.4em;
+				width: 95%;
+				
+			}
+		</style>
+		<script src="../js/jquery-3.5.1.min.js"></script>
+		<script src="../js/jquery-ui.js"></script>
+		<script>	
+			$(function(){
+				$('#dialog').dialog({
+					autoOpen:false,
+					buttons:{
+						저장:function(){
+							var eName=$('#event_name').val();
+							var eDate=$('#event_date').val();
+							$('<h1></h1>').html(eName+' : '+eDate).appendTo('#output');
+							$('#dialog').dialog('close');
+							$('#event_name').val('');
+							$('#event_date').val('');
+						},
+						초기화:function(){
+							$('#event_name').val('');
+							$('#event_date').val('');
+						},
+						취소:function(){
+							$('#event_name').val('');
+							$('#event_date').val('');
+							$('#dialog').dialog('close');
+						}
+					},
+					modal:true
+				});
+				$('#event_date').datepicker({
+					dateFormat:'yy년 mm월 dd일',
+					numberOfMonths:3
+				});
+				$('.btn_open').click(function(){
+					$('#dialog').dialog('open');
+				});
+			})
+		</script>
+	</head>
+	<body>
+		<h1>여기는 메인페이지짖</h1>
+		<button class="btn_open">일정등록</button>
+		<hr />
+		<div id="output"></div>
+		<div id="dialog" title="일정관리">
+			<h2>나의 일정</h2>
+			<label for=event_name>일정 이름</label>
+			<input type="text" id="event_name"/>
+			<label for="event_date">날짜</label>
+			<input type="text" id="event_date"/>
+		</div>
+	</body>
+</html>
